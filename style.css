@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(./images/bg-intro-desktop.png);
+  background-attachment: fixed;
+}
+.container {
+  margin: 100px;
+  display: flex;
+  justify-content: center;
+}
+.box-1 {
+  width: 55%;
+  color: white;
+  margin-right: 30px;
+  padding: 100px;
+}
+h1 {
+  font-weight: 700px;
+  font-size: 40px;
+  line-height: 45px;
+  padding-top: 40px;
+}
+
+p {
+  font-size: 16px;
+}
+.thead {
+  background-color: hsl(248, 32%, 49%);
+  text-align: center;
+  color: white;
+  padding: 13px 30px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: -1px 2px 7px rgba(70, 51, 51, 0.4);
+  /* box-shadow: ; */
+  margin-bottom: 10px;
+}
+.trial-span {
+  font-weight: 200;
+  font-size: 200px;
+}
+.form {
+  background-color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.form input {
+  /* padding-right: 60%; */
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 13px;
+  border: 1px solid rgb(219, 217, 217);
+  border-radius: 5px;
+  font-weight: 600;
+}
+.form div.error {
+  position: relative;
+}
+.form div.error input {
+  border: 2px solid #f2585b;
+  color: #f2585b;
+  outline: none;
+}
+.form div.error svg {
+  font-size: 25px;
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  color: #f2585b;
+}
+.form div.error label {
+  margin: -5px 0px 20px;
+  text-align: right;
+  display: block;
+  font-size: 12px;
+  font-style: italic;
+  color: #f2585b;
+}
+
+.form button {
+  width: 100%;
+  padding: 13px;
+  background-color: hsl(154, 59%, 51%);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  box-shadow: 0px 5px 0px hsl(154, 70%, 44%);
+}
+.form input:hover {
+  border: 1px solid rgb(0, 0, 0);
+}
+.form a {
+  width: 100%;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+.form a:hover {
+  color: hsl(0, 100%, 74%);
+}
+
+.form p {
+  text-align: center;
+  /* width: 500px; */
+  font-size: 12px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* padding-right: 60px; */
+  /* margin-bottom: 10px;  */
+}
+.form p a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+.trial-span {
+  font-weight: lighter;
+}
+#t-d {
+  color: hsl(0, 100%, 74%);
+}
+ul#Navigation .active {
+  border-color: white;
+  border-left-color: black;
+  border-top-color: black;
+  color: white;
+  background-color: #adadad;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background-image: url(./images/bg-intro-mobile.png);
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .box-1 {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+}
